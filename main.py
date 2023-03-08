@@ -1,3 +1,6 @@
+#REMEMBER TO CHANGE YOUR FILEPATH AND ADD A FOLDER... 
+#IN THIS CASE THE FOLDER IS CALLED "db"
+
 from datetime import datetime
 now = datetime.now()
 current_time = now.strftime("%c")
@@ -22,8 +25,8 @@ with open('db/db.txt', 'at') as f:
     f.write('\nDB started | ')
     f.write(str(current_time))
     f.write ("\n" + "\n")
-f = open("db/db.txt", "at")
+f = open("db/db.txt", "at") #CHANGE THIS
 f.write(result)
 f.close
-f = open("db/db.txt")
+f = open("db/db.txt") #CHANGE THIS
 print(str(f))
